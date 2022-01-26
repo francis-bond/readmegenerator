@@ -1,15 +1,15 @@
-# Portfolio
+# Project 2
 
 ## Description
 
-This is my professional portfolio.
+Application that makes your life easier
 
 ## Table of Contents 
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributing](#how-to-contribute)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -19,16 +19,15 @@ npm i
 
 ## Usage
 
-Use as you want to use
+Anyone can use this to make their next project
 
 ## License
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) 
-  
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)] (https://lbesson.mit-license.org/)
 
 ## How to Contribute
 
-This is how you can contribute to our project
+Make a pull requeset to contribute with a description
 
 ## Tests
 

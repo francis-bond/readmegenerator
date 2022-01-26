@@ -64,7 +64,7 @@ ${data.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributing](#how-to-contribute)
 - [Tests](#tests)
 - [Questions](#questions)
 
