@@ -3,16 +3,16 @@
 function renderLicenseBadge(license) {
   switch(license){
     case "MIT":
-      return `[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)`
-      
+      return `[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)]`
+
     case "GNU GPLv3":
-      return `[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)`
+      return `[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)]`
 
     case "Apache":
-      return `[![Npm package license](https://badgen.net/npm/llicense/discord.js)](https://npmjs.com/package/discord.js)`
+      return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`
 
     case "Mozilla Public":
-      return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+      return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]`
 
     default: 
     return ``
@@ -24,15 +24,16 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch(license){
     case "MIT":
-      return ``
+      return `(https://lbesson.mit-license.org/)`
+
     case "GNU GPLv3":
-      return ``
+      return `(http://perso.crans.org/besson/LICENSE.html)`
   
     case "Apache":
-      return ``
+      return `(https://opensource.org/licenses/Apache-2.0)`
   
     case "Mozilla Public":
-      return ``
+      return `(https://opensource.org/licenses/MPL-2.0)`
   
     default: 
     return ``
@@ -45,8 +46,7 @@ function renderLicenseSection(license) {
   var badge = renderLicenseBadge(license)
   var link = renderLicenseLink(license)
   
-  return `${badge} 
-  ${link}`
+  return `${badge} ${link}`
 }
 
 // TODO: Create a function to generate markdown for README
