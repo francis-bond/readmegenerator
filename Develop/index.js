@@ -43,7 +43,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: "Enter your Github username",
+        message: "Enter your Github url",
         name: 'github'
     },
     {
@@ -54,18 +54,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-fs.writeToFile("README.md", generateMarkdown(response), (err) =>
-    err ? console.log(err) : console.log('Readme created') );
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName, generateMarkdown(data)), (err) =>
+        err ? console.log(err) : console.log('Readme created')
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
         .prompt(questions)
         .then((response) => {
-            console.log(response)
-            writeToFile(response);
+            console.log("Response " + response);
+            writeToFile("README.md", response);
         }
-)};
+)}; 
 
 // Function call to initialize app
 init();
